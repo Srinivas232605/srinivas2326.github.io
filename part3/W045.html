@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.c{
+            transform: translate(100px,100px);
+            transform: rotate(30deg);
+            transform: scale(1.2,1.2);
+            transform: scaleX(1.5);
+            transform: scaleY(1.7);
+            transform: skew(10deg, 20deg);
+            transform: skewX(10deg);
+            transform: skewY(20deg);
+            transform: matrix();
+            scalex() skewy() skewx() scaley(), translatex(), translatey()
+
+        }*/
+
+        @keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the image */
+.rotate {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    animation: rotateImage 5s linear infinite; /* 5 seconds for a full rotation, infinite loop */
+}
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/id/200/300" class="rotate">
+</body>
+</html>

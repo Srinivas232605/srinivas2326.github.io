@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           
+       div::first-line{
+        color:blue;
+       }
+       div::first-letter{
+        color: red;
+        font-size: 60px;
+
+       }
+       ::selection{
+        color: maroon;
+        background: orange;
+       }
+       ::marker{
+        color: blue;
+       }
+       p.lesson::before{
+          content: url(https://picsum.photos/200/300);
+
+       }
+       p.lesson::first-letter{
+        color: blue;
+        font-size: 50px;
+
+       }
+
+    </style>
+</head>
+<body>
+    <div>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia 
+        laboriosam reprehenderit repudiandae harum excepturi consequatur nostrum labore optio exercitationem corrupti ducimus, totam laborum aperiam 
+        aliquid consectetur delectus quos quasi?
+        
+    </div>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <p class="lesson">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia 
+        laboriosam reprehenderit repudiandae harum excepturi consequatur nostrum labore optio exercitationem corrupti ducimus, totam laborum aperiam 
+        aliquid consectetur delectus quos quasi?
+        </p>
+</body>
+</html>

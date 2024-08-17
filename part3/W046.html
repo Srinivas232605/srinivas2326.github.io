@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/public/logo.png">
+    <style>
+
+        *{
+            margin: 0px;
+        }
+        li{
+            display: inline-block;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        .submenu{
+            display: none;
+            position: absolute;
+            background-color: blueviolet;
+            padding: 5px;
+        }
+        .menu:hover .submenu {
+            display: block;
+        }
+        ul{
+            /*position: absolute;*/
+            top:0px;
+            padding: 0px;
+            background-color: silver;
+            /*left:0px;*/
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+        .d{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: silver;
+            margin-left: 50px ;
+            margin-right: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="d">
+    <div>
+        <h1>Company</h1>
+    </div>
+    <div>
+    <ul>
+       <li>Home</li>
+       <li class="menu">Course
+         <div class="submenu">
+            <a href="#">Python</a><br>
+            <a href="#">Java</a><br>
+         </div>
+         
+
+       </li>
+       <li>About</li>
+       <li>Contact</li>
+    </ul>
+    </div>
+    </div>
+</body>
+</html>
